@@ -1,0 +1,21 @@
+services:
+  neolink-onvif-ptz:
+    build: .
+    image: neolink-onvif-ptz:local
+    container_name: neolink-onvif-ptz
+    restart: unless-stopped
+    network_mode: host
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    user: "65534:65534"
+    environment:
+      CAMERA_NAME: ${CAMERA_NAME:-camera}
+      NEOLINK_URL: http://127.0.0.1:8655
+      LISTEN_HOST: 127.0.0.1
+      LISTEN_PORT: "8765"
+      SAFETY_STOP_SECONDS: "10"

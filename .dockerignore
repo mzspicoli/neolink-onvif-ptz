@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+check_onvif.py
+test_bridge.py
+UPSTREAM_DRAFT.md
