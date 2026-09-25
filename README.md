@@ -1,5 +1,7 @@
 # Neolink.NET ONVIF PTZ bridge
 
+> **Native support is now available.** Neolink.NET [v1.1.0](https://github.com/borexola/neolink.net/releases/tag/v1.1.0) includes opt-in ONVIF PTZ for Frigate. Enable it under **Cameras → Edit → External connection** in Neolink.NET. New installations should use that built-in feature; this standalone bridge remains available for older Neolink.NET versions and as a reference implementation.
+
 Exposes the manual pan/tilt controls of a Reolink camera served by Neolink.NET
 to Frigate as a minimal ONVIF device. Video stays on its existing RTSP route.
 Zoom, presets, click-to-move, and autotracking are deliberately not advertised.
