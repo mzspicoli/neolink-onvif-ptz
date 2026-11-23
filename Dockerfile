@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.15-slim
 RUN pip install --no-cache-dir aiohttp==3.12.15 lxml==6.0.2
 WORKDIR /app
 COPY bridge /app/bridge
